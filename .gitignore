@@ -1,0 +1,8 @@
+~$*.docx
+*.docx
+qa/
+output/
+tmp/
+*.py
+.DS_Store
+Thumbs.db

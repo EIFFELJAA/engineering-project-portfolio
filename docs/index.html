@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engineering project portfolio of Chayut Nitipalakorn, documenting problems, design decisions, implementation, and tested results.">
+  <meta name="theme-color" content="#07111f">
+  <title>Chayut Nitipalakorn | Engineering Project Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2307111f'/%3E%3Cpath d='M17 20v24h10V33h10v11h10V20H37v9H27v-9z' fill='%235eead4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Chayut Nitipalakorn, home">
+      <span class="brand-mark">CN</span>
+      <span class="brand-text">CHAYUT<br>NITIPALAKORN</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span><span class="sr-only">Open navigation</span>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#mce242">MCE242</a>
+      <a href="#mce212">MCE212</a>
+      <a class="nav-resume" href="assets/Chayut_Nitipalakorn_Resume.pdf" download>Resume PDF</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="project-overview" id="top">
+      <div class="overview-copy">
+        <p class="eyebrow"><span></span> Engineering Project Portfolio</p>
+        <h1>Projects, decisions,<br>and <em>tested outcomes.</em></h1>
+        <p>Two university engineering projects documented from the original problem through design decisions, implementation, and final validation.</p>
+      </div>
+      <div class="project-index" aria-label="Project index">
+        <a href="#mce242"><span>01 · MCE242</span><b>AI Gauge &amp; Resistor Reader</b><i>Embedded systems · AI · IoT</i></a>
+        <a href="#mce212"><span>02 · MCE212</span><b>Worm Gearbox CAD Assembly</b><i>Mechanical design · CAD · GD&amp;T</i></a>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <article class="project-card project-case-study project-featured" id="mce242">
+        <div class="project-number">01</div>
+        <div class="project-case-body">
+          <div class="project-content case-study-intro">
+            <div class="project-meta"><span>MCE242</span><span>2026</span><span>2-person team</span></div>
+            <h3>AI-Based Industrial Gauge &amp; Resistor Reader</h3>
+            <p>Co-developed a compact ESP32-S3-CAM prototype with two operating modes: offline 4/5-band resistor calculation and AI-assisted industrial pressure-gauge monitoring.</p>
+            <div class="tag-row"><span>ESP32-S3-CAM</span><span>Gemini Cloud AI</span><span>IoT</span><span>System Integration</span></div>
+          </div>
+
+          <div class="project-summary-grid" aria-label="MCE242 project summary">
+            <section><span>01 / PROBLEM</span><h4>Manual readings can be slow or inaccurate</h4><p>Small resistor bands and detailed pressure-gauge scales are easy to misread, especially when a fast status decision is needed.</p></section>
+            <section><span>02 / APPROACH</span><h4>Split tasks between edge and cloud</h4><p>The ESP32-S3 handles resistor calculations locally, while camera images are sent to Gemini for gauge analysis.</p></section>
+            <section><span>03 / WORK</span><h4>Integrated the complete prototype</h4><p>Camera, web interface, OLED, audio, Telegram alerts, power, and data flow were combined into one two-mode system.</p></section>
+            <section><span>04 / RESULT</span><h4>Working outputs across three risk zones</h4><p>The prototype calculated resistors offline and identified 230, 300, and 500 bar tests as safe, warning, and danger.</p></section>
+          </div>
+
+          <div class="mce242-hero mce242-hero-compact">
+            <figure class="prototype-photo prototype-photo-main">
+              <img src="assets/mce242/prototype-front-new.png" alt="Front view of the ESP32-S3-CAM prototype with OLED display, camera, speaker, and connected modules" width="906" height="872" loading="lazy">
+              <figcaption><span>01</span> Front view · Complete prototype</figcaption>
+            </figure>
+            <div class="mce-demo-panel">
+              <p class="case-kicker">Working prototype</p>
+              <h4>See both modes in action</h4>
+              <p>The demonstration shows the resistor calculator, gauge image capture, AI analysis, OLED output, Telegram notification, and audio alert.</p>
+              <a class="demo-link" href="https://youtu.be/fDfO5gYfs7E?si=2m7p-_Mqk96DDUod" target="_blank" rel="noreferrer">
+                <span class="play-icon" aria-hidden="true">▶</span>
+                Watch system demo
+                <b aria-hidden="true">↗</b>
+              </a>
+            </div>
+          </div>
+
+          <div class="prototype-evidence" aria-label="Prototype interfaces and working results">
+            <figure>
+              <img src="assets/mce242/gauge-analyzer-interface.png" alt="Gauge Analyzer web interface with preview, manual analysis, and automatic monitoring controls" width="958" height="1996" loading="lazy">
+              <figcaption><span>02 / WEB CONTROL</span><b>Gauge Analyzer interface</b><small>Preview, analyze now, and automatic 30-second monitoring controls</small></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/mce242/live-gauge-test.png" alt="Camera module capturing a pressure gauge during a live prototype test" width="1010" height="2103" loading="lazy">
+              <figcaption><span>03 / LIVE TEST</span><b>Gauge image capture</b><small>The camera reads the pressure gauge before cloud analysis</small></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/mce242/telegram-gauge-results.png" alt="Telegram messages showing AI gauge analysis results for safe and warning pressure readings" width="1320" height="2107" loading="lazy">
+              <figcaption><span>04 / TELEGRAM</span><b>Remote status notifications</b><small>AI readings reported with value, color, status, confidence, and explanation</small></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/mce242/resistor-web-result.png" alt="ESP32-S3-CAM prototype beside a phone showing the matching 200 ohm plus or minus 1 percent web result" width="1368" height="1824" loading="lazy">
+              <figcaption><span>05 / RESISTOR MODE</span><b>Matching browser result</b><small>The offline 200 Ω ±1% calculation displayed on the prototype and web interface</small></figcaption>
+            </figure>
+          </div>
+
+          <div class="mode-grid" aria-label="System operating modes">
+            <section>
+              <span class="mode-number">MODE / 01</span>
+              <h4>Resistor Calculator</h4>
+              <p>The user selects the color bands for a 4- or 5-band resistor. The ESP32-S3 calculates resistance and tolerance locally, then displays the result on the web interface and OLED.</p>
+              <div class="mode-route"><b>Color input</b><i>→</i><b>Offline calculation</b><i>→</i><b>OLED + Web</b></div>
+            </section>
+            <section>
+              <span class="mode-number">MODE / 02</span>
+              <h4>Gauge Analyzer</h4>
+              <p>The OV5640 captures a gauge image. The ESP32-S3 sends it to Gemini through HTTPS as Base64, receives structured JSON, and reports the value and risk status.</p>
+              <div class="mode-route"><b>Camera</b><i>→</i><b>Cloud AI</b><i>→</i><b>OLED + Telegram + Audio</b></div>
+            </section>
+          </div>
+
+          <div class="system-strip" aria-label="System architecture">
+            <span>OV5640 AF</span><i>→</i><span>ESP32-S3</span><i>→</i><span>HTTPS / Base64</span><i>→</i><span>Gemini AI</span><i>→</i><span>JSON Result</span>
+          </div>
+
+          <div class="case-story mce242-iterations" aria-label="Engineering iterations">
+            <section>
+              <span>01 / RESPONSIVENESS</span>
+              <h4>Reduced preview load</h4>
+              <p>Continuous image streaming overloaded the controller. The design was changed to capture only when Preview or Analyze is requested.</p>
+            </section>
+            <section>
+              <span>02 / IMAGE QUALITY</span>
+              <h4>Improved gauge clarity</h4>
+              <p>The camera was upgraded from OV2640 to autofocus OV5640, with VGA resolution and JPEG quality 10 for clearer dial details.</p>
+            </section>
+            <section>
+              <span>03 / RELIABILITY</span>
+              <h4>Prevented stale readings</h4>
+              <p>The system clears three old camera frames before each analysis and uses stable USB-C power to prevent repeated board resets.</p>
+            </section>
+          </div>
+
+          <div class="test-results">
+            <div class="results-intro">
+              <p class="case-kicker">Validation</p>
+              <h4>Three pressure zones tested</h4>
+              <p>The prototype selected the higher-risk state at a color boundary and delivered each result through the appropriate output channels.</p>
+            </div>
+            <div class="result-card result-safe"><span>230</span><small>BAR</small><b>SAFE</b><p>Green zone<br>OLED status</p></div>
+            <div class="result-card result-warning"><span>300</span><small>BAR</small><b>WARNING</b><p>Boundary case<br>OLED + Telegram</p></div>
+            <div class="result-card result-danger"><span>500</span><small>BAR</small><b>DANGER</b><p>Red zone<br>OLED + Telegram</p></div>
+          </div>
+
+          <div class="drawing-gallery-header mce242-gallery-header">
+            <div>
+              <p class="case-kicker">System documentation</p>
+              <h4>Hardware connections and program flow</h4>
+            </div>
+            <p>Documentation developed alongside the working prototype.</p>
+          </div>
+          <div class="mce242-docs">
+            <figure>
+              <img src="assets/mce242/system-wiring.webp" alt="Hardware connection diagram for the ESP32-S3-CAM, OLED, speaker and amplifier" width="1105" height="1430" loading="lazy">
+              <figcaption><b>Hardware architecture</b><span>I2C · I2S · DVP/SCCB · HTTPS</span></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/mce242/system-flowchart.webp" alt="Flowchart for the resistor calculator and AI gauge analyzer operating modes" width="1105" height="1430" loading="lazy">
+              <figcaption><b>Program flow</b><span>Two modes · auto monitoring · status alerts</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-case-study" id="mce212">
+        <div class="project-number">02</div>
+        <div class="project-case-body">
+          <div class="project-content case-study-intro">
+            <div class="project-meta"><span>MCE212</span><span>2025</span><span>2-person team</span></div>
+            <h3>Worm Gearbox CAD Assembly</h3>
+            <p>A complete gearbox assembly developed in Autodesk Inventor, with production drawings created for the components under my responsibility.</p>
+            <div class="tag-row"><span>Autodesk Inventor</span><span>3D CAD</span><span>GD&amp;T</span><span>Assembly Fit</span></div>
+          </div>
+
+          <div class="case-hero">
+            <a class="drawing-feature" href="assets/mce212/exploded-assembly.pdf" target="_blank" rel="noreferrer" aria-label="Open the exploded assembly drawing as a PDF">
+              <img src="assets/mce212/exploded.png" alt="Exploded engineering drawing of the complete worm gearbox assembly" width="2807" height="1985" loading="lazy">
+              <span>Open full drawing <b aria-hidden="true">↗</b></span>
+            </a>
+            <div class="case-facts">
+              <p class="case-kicker">My responsibility</p>
+              <h4>Four component drawings + exploded assembly</h4>
+              <p>Worm gear, top cover, wheel-shaft end cover, oil seal, and an exploded view showing every component in the complete assembly.</p>
+              <dl>
+                <div><dt>Deliverables</dt><dd>3D parts, assembly, production drawings</dd></div>
+                <div><dt>Drawing work</dt><dd>Dimensions, fits, surface roughness, GD&amp;T, parts list</dd></div>
+                <div><dt>Design priority</dt><dd>Every mating feature and hole had to align in the final assembly</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="case-story" aria-label="Project case study">
+            <section>
+              <span>01 / PROBLEM</span>
+              <h4>Given dimensions did not assemble</h4>
+              <p>When the parts were modelled directly from the dimensions in the assignment, some components did not fit together and several mating features or holes did not align.</p>
+            </section>
+            <section>
+              <span>02 / APPROACH</span>
+              <h4>Designed around shared interfaces</h4>
+              <p>I reviewed how each part connected to the next, then adjusted individual dimensions using mechanical reasoning while checking the complete assembly after each change.</p>
+            </section>
+            <section>
+              <span>03 / WORK</span>
+              <h4>Modelled parts and production drawings</h4>
+              <p>I created the four assigned component drawings, documented the required manufacturing details, and produced an exploded view of every part in the complete assembly.</p>
+            </section>
+            <section>
+              <span>04 / RESULT</span>
+              <h4>One coherent assembly</h4>
+              <p>The revised parts could be assembled as a single system, with mating geometry and hole locations made consistent across the components.</p>
+            </section>
+          </div>
+
+          <div class="drawing-gallery-header">
+            <div>
+              <p class="case-kicker">Selected drawings</p>
+              <h4>From individual parts to final assembly</h4>
+            </div>
+            <p>Click any drawing to inspect the full-resolution PDF.</p>
+          </div>
+          <div class="drawing-gallery">
+            <a class="drawing-card drawing-card-wide" href="assets/mce212/worm-gear.pdf" target="_blank" rel="noreferrer">
+              <img src="assets/mce212/worm-gear.png" alt="Production drawing of a 60-tooth worm gear" width="1985" height="1404" loading="lazy">
+              <span><b>Worm gear</b><small>60 teeth · keyway · section view</small></span>
+            </a>
+            <a class="drawing-card" href="assets/mce212/top-cover.pdf" target="_blank" rel="noreferrer">
+              <img src="assets/mce212/top-cover.png" alt="Production drawing of the gearbox top cover" width="1985" height="1404" loading="lazy">
+              <span><b>Top cover</b><small>Hole pattern · section view</small></span>
+            </a>
+            <a class="drawing-card" href="assets/mce212/end-cover-wheel-shaft.pdf" target="_blank" rel="noreferrer">
+              <img src="assets/mce212/end-cover.png" alt="Production drawing of the wheel shaft end cover" width="1985" height="1404" loading="lazy">
+              <span><b>Wheel-shaft end cover</b><small>Fits · GD&amp;T · PCD hole pattern</small></span>
+            </a>
+            <a class="drawing-card" href="assets/mce212/oil-seal.pdf" target="_blank" rel="noreferrer">
+              <img src="assets/mce212/oil-seal.png" alt="Production drawing of the gearbox oil seal" width="1985" height="1404" loading="lazy">
+              <span><b>Oil seal</b><small>Section view · chamfer detail</small></span>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>CHAYUT NITIPALAKORN</p>
+    <p>ENGINEERING PROJECT PORTFOLIO</p>
+    <p>© 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
