@@ -25,6 +25,7 @@
     <nav id="site-nav" aria-label="Main navigation">
       <a href="#gauge-reader">Gauge Reader</a>
       <a href="#worm-gearbox">CAD Assembly</a>
+      <a href="#robocon">Robocon</a>
     </nav>
   </header>
 
@@ -33,11 +34,12 @@
       <div class="overview-copy">
         <p class="eyebrow"><span></span> Engineering Project Portfolio</p>
         <h1>Projects, decisions,<br>and <em>tested outcomes.</em></h1>
-        <p>Two university engineering projects documented from the original problem through design decisions, implementation, and final validation.</p>
+        <p>Three university engineering projects documented from the original problem through design decisions, implementation, and final validation.</p>
       </div>
       <div class="project-index" aria-label="Project index">
-        <a href="#gauge-reader"><span>01 · Embedded Systems</span><b>AI Gauge &amp; Resistor Reader</b><i>Embedded systems · AI · IoT</i></a>
-        <a href="#worm-gearbox"><span>02 · Mechanical Design</span><b>Worm Gearbox CAD Assembly</b><i>Mechanical design · CAD · GD&amp;T</i></a>
+        <a href="#gauge-reader"><span>01 · Embedded Systems</span><b>AI Gauge Inspection &amp; Resistor Calculator</b><i>Embedded systems · AI · IoT</i></a>
+        <a href="#worm-gearbox"><span>02 · Mechanical Design</span><b>Parametric Worm Gearbox CAD Assembly</b><i>Mechanical design · CAD · GD&amp;T</i></a>
+        <a href="#robocon"><span>03 · Robotics</span><b>ABU Robocon Electrical &amp; Drivetrain Integration</b><i>Power system · Motor control · Wiring</i></a>
       </div>
     </section>
 
@@ -46,9 +48,9 @@
         <div class="project-number">01</div>
         <div class="project-case-body">
           <div class="project-content case-study-intro">
-            <div class="project-meta"><span>2026</span><span>2-person team</span></div>
-            <h3>AI-Based Industrial Gauge &amp; Resistor Reader</h3>
-            <p>Co-developed a compact ESP32-S3-CAM prototype with two operating modes: offline 4/5-band resistor calculation and AI-assisted industrial pressure-gauge monitoring.</p>
+            <div class="project-meta"><span>2026</span><span>Embedded firmware &amp; IoT</span><span>2-person team</span></div>
+            <h3>AI-Based Industrial Gauge Inspection &amp; Embedded Resistor Calculator</h3>
+            <p>Co-developed a dual-mode ESP32-S3-CAM system: a web-controlled 4/5-band resistor calculator that runs locally on the microcontroller, and an AI-assisted industrial pressure-gauge inspection workflow.</p>
             <div class="tag-row"><span>ESP32-S3-CAM</span><span>Gemini Cloud AI</span><span>IoT</span><span>System Integration</span></div>
           </div>
 
@@ -105,7 +107,7 @@
             <section>
               <span class="mode-number">MODE / 02</span>
               <h4>Gauge Analyzer</h4>
-              <p>The OV5640 captures a gauge image. The ESP32-S3 sends it to Gemini through HTTPS as Base64, receives structured JSON, and reports the value and risk status.</p>
+              <p>A live preview helps align the OV5640 camera. Manual analysis or 30-second automatic monitoring sends a captured image to Gemini through HTTPS, then parses the gauge value, needle color zone, and risk status.</p>
               <div class="mode-route"><b>Camera</b><i>→</i><b>Cloud AI</b><i>→</i><b>OLED + Telegram + Audio</b></div>
             </section>
           </div>
@@ -167,8 +169,8 @@
         <div class="project-number">02</div>
         <div class="project-case-body">
           <div class="project-content case-study-intro">
-            <div class="project-meta"><span>2025</span><span>2-person team</span></div>
-            <h3>Worm Gearbox CAD Assembly</h3>
+            <div class="project-meta"><span>2025</span><span>Mechanical design</span><span>2-person team</span></div>
+            <h3>Parametric Worm Gearbox CAD Assembly</h3>
             <p>A complete gearbox assembly developed in Autodesk Inventor, with production drawings created for the components under my responsibility.</p>
             <div class="tag-row"><span>Autodesk Inventor</span><span>3D CAD</span><span>GD&amp;T</span><span>Assembly Fit</span></div>
           </div>
@@ -237,6 +239,50 @@
               <img src="assets/mce212/oil-seal.png" alt="Production drawing of the gearbox oil seal" width="1985" height="1404" loading="lazy">
               <span><b>Oil seal</b><small>Section view · chamfer detail</small></span>
             </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-case-study" id="robocon">
+        <div class="project-number">03</div>
+        <div class="project-case-body">
+          <div class="project-content case-study-intro">
+            <div class="project-meta"><span>Jan–Mar 2026</span><span>Electrical subsystem team</span><span>TRCC</span></div>
+            <h3>ABU Robocon Electrical &amp; Drivetrain Integration</h3>
+            <p>Worked on the electrical power path and motor-drive integration for a tricycle robot, from isolated motor testing to higher-current battery and wiring implementation.</p>
+            <div class="tag-row"><span>12 V DC Motors</span><span>3S LiPo</span><span>Motor Drivers</span><span>Soldering</span><span>Power Wiring</span></div>
+          </div>
+
+          <div class="project-summary-grid" aria-label="ABU Robocon electrical project summary">
+            <section><span>01 / PROBLEM</span><h4>Four motors needed a reliable power path</h4><p>The drivetrain required enough current for four 12 V motors while keeping connections secure and avoiding overheated low-current wiring.</p></section>
+            <section><span>02 / APPROACH</span><h4>Validate before full integration</h4><p>Each unloaded motor was bench-tested at a regulated 12 V with a 1 A current limit so defective units could be identified before assembly.</p></section>
+            <section><span>03 / WORK</span><h4>Integrated drive power and control</h4><p>Four motors, gear reductions, Prik Thai motor drivers, parallel batteries, and upgraded wiring harnesses were connected into the robot drivetrain.</p></section>
+            <section><span>04 / RESULT</span><h4>A safer, higher-current drivetrain circuit</h4><p>The completed power path maintained a 12 V supply while increasing available current and reinforcing every high-load motor connection.</p></section>
+          </div>
+
+          <div class="robocon-specs" aria-label="Robocon drivetrain specifications">
+            <div><span>DRIVE MOTORS</span><b>4 × 12 V DC</b><p>Two motors per driven wheel</p></div>
+            <div><span>CHASSIS</span><b>Tricycle layout</b><p>Two driven wheels + passive front wheel</p></div>
+            <div><span>BATTERY</span><b>2 × 3S LiPo</b><p>12.6 V fully charged · 25C–30C · parallel</p></div>
+            <div><span>BENCH TEST</span><b>12 V / 1 A limit</b><p>Unloaded motor screening before assembly</p></div>
+          </div>
+
+          <div class="case-story robocon-work" aria-label="Robocon implementation details">
+            <section>
+              <span>01 / DRIVETRAIN</span>
+              <h4>Four-motor drive layout</h4>
+              <p>Two 12 V motors powered each driven wheel through gearboxes and reduction gear trains. Prik Thai motor drivers provided the control interface, while the front wheel remained passive.</p>
+            </section>
+            <section>
+              <span>02 / POWER</span>
+              <h4>Parallel 3S battery supply</h4>
+              <p>Two matched 3S LiPo batteries were connected in parallel to retain the same system voltage while increasing the current available to the four drive motors.</p>
+            </section>
+            <section>
+              <span>03 / WIRING</span>
+              <h4>Higher-current motor harnesses</h4>
+              <p>Male connector pins were soldered to larger-gauge wires and insulated with heat-shrink. Motor leads were also soldered and insulated before connection to reduce resistance and overheating risk.</p>
+            </section>
           </div>
         </div>
       </article>

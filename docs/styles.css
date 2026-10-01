@@ -206,6 +206,13 @@ h1 em, .closing em { color: #087e73; font-style: normal; }
 .mode-route b { padding: .35rem .5rem; border: 1px solid rgba(94,234,212,.35); }
 .mode-route i, .system-strip i { color: var(--signal); font-style: normal; }
 .system-strip { display: flex; align-items: center; justify-content: space-between; gap: .6rem; padding: 1rem 1.3rem; color: #c8d2db; border: 1px solid rgba(255,255,255,.18); border-top: 0; font: 500 .65rem "IBM Plex Mono", monospace; text-transform: uppercase; }
+.robocon-specs { display: grid; grid-template-columns: repeat(4, 1fr); margin-bottom: 2.3rem; border: 1px solid rgba(255,255,255,.18); }
+.robocon-specs div { min-width: 0; padding: 1.35rem; border-right: 1px solid rgba(255,255,255,.18); }
+.robocon-specs div:last-child { border-right: 0; }
+.robocon-specs span { display: block; margin-bottom: 1rem; color: var(--accent); font: 500 .64rem "IBM Plex Mono", monospace; letter-spacing: .08em; }
+.robocon-specs b { display: block; margin-bottom: .35rem; color: var(--white); font-size: 1.05rem; }
+.robocon-specs p { margin: 0; color: #9dadbd; font-size: .82rem; }
+.robocon-work { grid-template-columns: repeat(3, 1fr); }
 .mce242-iterations { margin-bottom: 2.3rem; }
 .test-results { display: grid; grid-template-columns: 1.35fr repeat(3, .55fr); border-top: 1px solid rgba(255,255,255,.18); border-left: 1px solid rgba(255,255,255,.18); }
 .results-intro, .result-card { padding: 1.5rem; border-right: 1px solid rgba(255,255,255,.18); border-bottom: 1px solid rgba(255,255,255,.18); }
@@ -308,7 +315,10 @@ footer p { margin: 0; }
   .project-card { grid-template-columns: 50px 1fr; }
   .project-diagram { grid-column: 2; min-height: 270px; }
   .project-case-study { grid-template-columns: 50px minmax(0, 1fr); }
-  .project-summary-grid, .case-story { grid-template-columns: repeat(2, 1fr); }
+  .project-summary-grid, .case-story, .robocon-specs { grid-template-columns: repeat(2, 1fr); }
+  .robocon-specs div { border-bottom: 1px solid rgba(255,255,255,.18); }
+  .robocon-specs div:nth-child(2n) { border-right: 0; }
+  .robocon-specs div:nth-last-child(-n+2) { border-bottom: 0; }
   .mce242-hero { grid-template-columns: repeat(2, 1fr); }
   .mce-demo-panel { grid-column: 1 / -1; min-height: 280px; border-left: 0; border-top: 1px solid rgba(255,255,255,.18); }
   .test-results { grid-template-columns: repeat(3, 1fr); }
@@ -348,8 +358,11 @@ footer p { margin: 0; }
   .mce242-docs figure { grid-template-rows: 330px auto; }
   .drawing-feature { min-height: 260px; }
   .case-facts { padding: 1.4rem; }
-  .case-story, .case-story.mce242-iterations, .project-summary-grid { grid-template-columns: 1fr; }
+  .case-story, .case-story.mce242-iterations, .project-summary-grid, .robocon-specs { grid-template-columns: 1fr; }
   .project-summary-grid section { min-height: auto; }
+  .robocon-specs div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.18); }
+  .robocon-specs div:nth-last-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.18); }
+  .robocon-specs div:last-child { border-bottom: 0; }
   .case-story section { min-height: auto; }
   .drawing-gallery-header { display: block; }
   .drawing-gallery-header > p { margin-top: .7rem; text-align: left; }
