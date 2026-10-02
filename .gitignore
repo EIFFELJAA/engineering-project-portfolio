@@ -6,3 +6,4 @@ tmp/
 *.py
 .DS_Store
 Thumbs.db
+source-code/**/secrets.h

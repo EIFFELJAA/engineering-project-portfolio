@@ -25,7 +25,6 @@
     <nav id="site-nav" aria-label="Main navigation">
       <a href="#gauge-reader">Gauge Reader</a>
       <a href="#worm-gearbox">CAD Assembly</a>
-      <a href="#robocon">Robocon</a>
     </nav>
   </header>
 
@@ -34,12 +33,11 @@
       <div class="overview-copy">
         <p class="eyebrow"><span></span> Engineering Project Portfolio</p>
         <h1>Projects, decisions,<br>and <em>tested outcomes.</em></h1>
-        <p>Three university engineering projects documented from the original problem through design decisions, implementation, and final validation.</p>
+        <p>Two university engineering projects documented from the original problem through design decisions, implementation, and final validation.</p>
       </div>
       <div class="project-index" aria-label="Project index">
         <a href="#gauge-reader"><span>01 · Embedded Systems</span><b>AI Gauge Inspection &amp; Resistor Calculator</b><i>Embedded systems · AI · IoT</i></a>
         <a href="#worm-gearbox"><span>02 · Mechanical Design</span><b>Parametric Worm Gearbox CAD Assembly</b><i>Mechanical design · CAD · GD&amp;T</i></a>
-        <a href="#robocon"><span>03 · Robotics</span><b>ABU Robocon Electrical &amp; Drivetrain Integration</b><i>Power system · Motor control · Wiring</i></a>
       </div>
     </section>
 
@@ -73,6 +71,11 @@
               <a class="demo-link" href="https://youtu.be/fDfO5gYfs7E?si=2m7p-_Mqk96DDUod" target="_blank" rel="noreferrer">
                 <span class="play-icon" aria-hidden="true">▶</span>
                 Watch system demo
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="demo-link demo-link-secondary" href="https://github.com/EIFFELJAA/engineering-project-portfolio/tree/main/source-code/ai-meter-reader" target="_blank" rel="noreferrer">
+                <span aria-hidden="true">&lt;/&gt;</span>
+                View source code
                 <b aria-hidden="true">↗</b>
               </a>
             </div>
@@ -243,49 +246,6 @@
         </div>
       </article>
 
-      <article class="project-card project-case-study" id="robocon">
-        <div class="project-number">03</div>
-        <div class="project-case-body">
-          <div class="project-content case-study-intro">
-            <div class="project-meta"><span>Jan–Mar 2026</span><span>Electrical subsystem team</span><span>TRCC</span></div>
-            <h3>ABU Robocon Electrical &amp; Drivetrain Integration</h3>
-            <p>Worked on the electrical power path and motor-drive integration for a tricycle robot, from isolated motor testing to higher-current battery and wiring implementation.</p>
-            <div class="tag-row"><span>12 V DC Motors</span><span>3S LiPo</span><span>Motor Drivers</span><span>Soldering</span><span>Power Wiring</span></div>
-          </div>
-
-          <div class="project-summary-grid" aria-label="ABU Robocon electrical project summary">
-            <section><span>01 / PROBLEM</span><h4>Four motors needed a reliable power path</h4><p>The drivetrain required enough current for four 12 V motors while keeping connections secure and avoiding overheated low-current wiring.</p></section>
-            <section><span>02 / APPROACH</span><h4>Validate before full integration</h4><p>Each unloaded motor was bench-tested at a regulated 12 V with a 1 A current limit so defective units could be identified before assembly.</p></section>
-            <section><span>03 / WORK</span><h4>Integrated drive power and control</h4><p>Four motors, gear reductions, Prik Thai motor drivers, parallel batteries, and upgraded wiring harnesses were connected into the robot drivetrain.</p></section>
-            <section><span>04 / RESULT</span><h4>A safer, higher-current drivetrain circuit</h4><p>The completed power path maintained a 12 V supply while increasing available current and reinforcing every high-load motor connection.</p></section>
-          </div>
-
-          <div class="robocon-specs" aria-label="Robocon drivetrain specifications">
-            <div><span>DRIVE MOTORS</span><b>4 × 12 V DC</b><p>Two motors per driven wheel</p></div>
-            <div><span>CHASSIS</span><b>Tricycle layout</b><p>Two driven wheels + passive front wheel</p></div>
-            <div><span>BATTERY</span><b>2 × 3S LiPo</b><p>12.6 V fully charged · 25C–30C · parallel</p></div>
-            <div><span>BENCH TEST</span><b>12 V / 1 A limit</b><p>Unloaded motor screening before assembly</p></div>
-          </div>
-
-          <div class="case-story robocon-work" aria-label="Robocon implementation details">
-            <section>
-              <span>01 / DRIVETRAIN</span>
-              <h4>Four-motor drive layout</h4>
-              <p>Two 12 V motors powered each driven wheel through gearboxes and reduction gear trains. Prik Thai motor drivers provided the control interface, while the front wheel remained passive.</p>
-            </section>
-            <section>
-              <span>02 / POWER</span>
-              <h4>Parallel 3S battery supply</h4>
-              <p>Two matched 3S LiPo batteries were connected in parallel to retain the same system voltage while increasing the current available to the four drive motors.</p>
-            </section>
-            <section>
-              <span>03 / WIRING</span>
-              <h4>Higher-current motor harnesses</h4>
-              <p>Male connector pins were soldered to larger-gauge wires and insulated with heat-shrink. Motor leads were also soldered and insulated before connection to reduce resistance and overheating risk.</p>
-            </section>
-          </div>
-        </div>
-      </article>
     </section>
   </main>
 

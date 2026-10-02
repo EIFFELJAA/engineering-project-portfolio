@@ -17,5 +17,6 @@ Open `docs/index.html` in a browser, or serve the `docs` directory with any stat
 - Main content: `docs/index.html`
 - Visual styles: `docs/styles.css`
 - Project images and profile photo: `docs/assets/`
+- ESP32 project source: `source-code/ai-meter-reader/`
 
 Before sharing the portfolio, add a public email address and GitHub or LinkedIn profile once those details are ready.
