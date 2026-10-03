@@ -36,8 +36,8 @@
         <p>Two university engineering projects documented from the original problem through design decisions, implementation, and final validation.</p>
       </div>
       <div class="project-index" aria-label="Project index">
-        <a href="#gauge-reader"><span>01 · Embedded Systems</span><b>AI Gauge Inspection &amp; Resistor Calculator</b><i>Embedded systems · AI · IoT</i></a>
-        <a href="#worm-gearbox"><span>02 · Mechanical Design</span><b>Parametric Worm Gearbox CAD Assembly</b><i>Mechanical design · CAD · GD&amp;T</i></a>
+        <a href="#gauge-reader"><span>01 · Embedded Systems</span><b>AI-Assisted Pressure Gauge Reading &amp; Embedded Resistor Calculator</b><i>Embedded firmware · AI · IoT</i></a>
+        <a href="#worm-gearbox"><span>02 · Mechanical Design</span><b>Parametric Worm Gearbox CAD Assembly</b><i>Mechanical design · Inventor · 2D drawings</i></a>
       </div>
     </section>
 
@@ -46,17 +46,17 @@
         <div class="project-number">01</div>
         <div class="project-case-body">
           <div class="project-content case-study-intro">
-            <div class="project-meta"><span>2026</span><span>Embedded firmware &amp; IoT</span><span>2-person team</span></div>
-            <h3>AI-Based Industrial Gauge Inspection &amp; Embedded Resistor Calculator</h3>
-            <p>Co-developed a dual-mode ESP32-S3-CAM system: a web-controlled 4/5-band resistor calculator that runs locally on the microcontroller, and an AI-assisted industrial pressure-gauge inspection workflow.</p>
+            <div class="project-meta"><span>2026</span><span>Academic prototype</span><span>Embedded firmware &amp; IoT · 2-person team</span></div>
+            <h3>AI-Assisted Pressure Gauge Reading &amp; Embedded Resistor Calculator</h3>
+            <p>Developed an ESP32-S3-CAM prototype for local 4/5-band resistor calculations and pressure-gauge image analysis using an OV5640 camera and the Gemini HTTPS REST API.</p>
             <div class="tag-row"><span>ESP32-S3-CAM</span><span>Gemini Cloud AI</span><span>IoT</span><span>System Integration</span></div>
           </div>
 
           <div class="project-summary-grid" aria-label="AI gauge and resistor reader project summary">
             <section><span>01 / PROBLEM</span><h4>Manual readings can be slow or inaccurate</h4><p>Small resistor bands and detailed pressure-gauge scales are easy to misread, especially when a fast status decision is needed.</p></section>
             <section><span>02 / APPROACH</span><h4>Split tasks between edge and cloud</h4><p>The ESP32-S3 handles resistor calculations locally, while camera images are sent to Gemini for gauge analysis.</p></section>
-            <section><span>03 / WORK</span><h4>Integrated the complete prototype</h4><p>Camera, web interface, OLED, audio, Telegram alerts, power, and data flow were combined into one two-mode system.</p></section>
-            <section><span>04 / RESULT</span><h4>Working outputs across three risk zones</h4><p>The prototype calculated resistors offline and identified 230, 300, and 500 bar tests as safe, warning, and danger.</p></section>
+            <section><span>03 / WORK</span><h4>Integrated both operating modes</h4><p>Parsed API responses for gauge readings and needle color zones, then connected the web dashboard, OLED display, I2S audio, and Telegram status alerts.</p></section>
+            <section><span>04 / RESULT</span><h4>Working prototype demonstrated to faculty</h4><p>The prototype calculated resistors locally and reported safe, warning, and danger gauge conditions through its display and notification outputs.</p></section>
           </div>
 
           <div class="mce242-hero mce242-hero-compact">
@@ -110,7 +110,7 @@
             <section>
               <span class="mode-number">MODE / 02</span>
               <h4>Gauge Analyzer</h4>
-              <p>A live preview helps align the OV5640 camera. Manual analysis or 30-second automatic monitoring sends a captured image to Gemini through HTTPS, then parses the gauge value, needle color zone, and risk status.</p>
+              <p>An on-demand Preview image helps align the OV5640 camera. Manual analysis or 30-second automatic monitoring sends a fresh capture to Gemini through HTTPS, then parses the gauge value, needle color zone, and risk status.</p>
               <div class="mode-route"><b>Camera</b><i>→</i><b>Cloud AI</b><i>→</i><b>OLED + Telegram + Audio</b></div>
             </section>
           </div>
@@ -123,7 +123,7 @@
             <section>
               <span>01 / RESPONSIVENESS</span>
               <h4>Reduced preview load</h4>
-              <p>Continuous image streaming overloaded the controller. The design was changed to capture only when Preview or Analyze is requested.</p>
+              <p>Continuous image streaming overloaded the controller. I replaced it with on-demand capture triggered by Preview or Analyze requests.</p>
             </section>
             <section>
               <span>02 / IMAGE QUALITY</span>
@@ -133,7 +133,7 @@
             <section>
               <span>03 / RELIABILITY</span>
               <h4>Prevented stale readings</h4>
-              <p>The system clears three old camera frames before each analysis and uses stable USB-C power to prevent repeated board resets.</p>
+              <p>The system flushes three buffered camera frames before each analysis to avoid stale images and uses stable USB-C power to address repeated board resets.</p>
             </section>
           </div>
 
@@ -172,10 +172,10 @@
         <div class="project-number">02</div>
         <div class="project-case-body">
           <div class="project-content case-study-intro">
-            <div class="project-meta"><span>2025</span><span>Mechanical design</span><span>2-person team</span></div>
+            <div class="project-meta"><span>2025</span><span>Mechanical design · 2-person team</span></div>
             <h3>Parametric Worm Gearbox CAD Assembly</h3>
-            <p>A complete gearbox assembly developed in Autodesk Inventor, with production drawings created for the components under my responsibility.</p>
-            <div class="tag-row"><span>Autodesk Inventor</span><span>3D CAD</span><span>GD&amp;T</span><span>Assembly Fit</span></div>
+            <p>Modeled four parametric 3D components in Autodesk Inventor, checked their fit in the gearbox assembly, and prepared 2D drawings plus an exploded view and parts list.</p>
+            <div class="tag-row"><span>Autodesk Inventor</span><span>Parametric 3D CAD</span><span>2D Drawings</span><span>Assembly Fit</span></div>
           </div>
 
           <div class="case-hero">
@@ -188,8 +188,8 @@
               <h4>Four component drawings + exploded assembly</h4>
               <p>Worm gear, top cover, wheel-shaft end cover, oil seal, and an exploded view showing every component in the complete assembly.</p>
               <dl>
-                <div><dt>Deliverables</dt><dd>3D parts, assembly, production drawings</dd></div>
-                <div><dt>Drawing work</dt><dd>Dimensions, fits, surface roughness, GD&amp;T, parts list</dd></div>
+                <div><dt>Deliverables</dt><dd>Four parametric 3D parts, 2D drawings, exploded view</dd></div>
+                <div><dt>Drawing work</dt><dd>Dimensions, surface roughness symbols, parts list</dd></div>
                 <div><dt>Design priority</dt><dd>Every mating feature and hole had to align in the final assembly</dd></div>
               </dl>
             </div>
@@ -204,12 +204,12 @@
             <section>
               <span>02 / APPROACH</span>
               <h4>Designed around shared interfaces</h4>
-              <p>I reviewed how each part connected to the next, then adjusted individual dimensions using mechanical reasoning while checking the complete assembly after each change.</p>
+              <p>I checked assembly interference and clearances in CAD, then adjusted dimensions to resolve mismatched mating features and misaligned holes.</p>
             </section>
             <section>
               <span>03 / WORK</span>
               <h4>Modelled parts and production drawings</h4>
-              <p>I created the four assigned component drawings, documented the required manufacturing details, and produced an exploded view of every part in the complete assembly.</p>
+              <p>I modeled the worm gear, top cover, wheel-shaft end cover, and oil seal as parametric 3D parts. I also prepared their 2D drawings with dimensions and surface roughness symbols, plus an exploded assembly view and parts list.</p>
             </section>
             <section>
               <span>04 / RESULT</span>
