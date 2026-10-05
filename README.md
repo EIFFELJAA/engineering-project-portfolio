@@ -1,22 +1,22 @@
-# Chayut Nitipalakorn — Resume Portfolio
+# Chayut Nitipalakorn — Engineering Project Portfolio
 
-A responsive one-page portfolio for internship applications, built as a static website for GitHub Pages.
+A project-focused portfolio for internship applications, published with GitHub Pages:
+
+https://eiffeljaa.github.io/engineering-project-portfolio/
+
+The site documents an ESP32-S3-CAM gauge and resistor prototype, a parametric worm gearbox CAD assembly, and electrical subsystem work for ABU Robocon.
 
 ## Preview locally
 
 Open `docs/index.html` in a browser, or serve the `docs` directory with any static file server.
 
-## Publish with GitHub Pages
+## Publishing
 
-1. Create a GitHub repository and upload this project.
-2. In **Settings → Pages**, select **Deploy from a branch**.
-3. Choose the `main` branch and the `/docs` folder, then save.
+GitHub Pages deploys the `docs/` folder from the `main` branch.
 
 ## Update later
 
 - Main content: `docs/index.html`
 - Visual styles: `docs/styles.css`
-- Project images and profile photo: `docs/assets/`
+- Project images and drawings: `docs/assets/`
 - ESP32 project source: `source-code/ai-meter-reader/`
-
-Before sharing the portfolio, add a public email address and GitHub or LinkedIn profile once those details are ready.

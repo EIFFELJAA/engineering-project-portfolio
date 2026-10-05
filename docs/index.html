@@ -25,6 +25,7 @@
     <nav id="site-nav" aria-label="Main navigation">
       <a href="#gauge-reader">Gauge Reader</a>
       <a href="#worm-gearbox">CAD Assembly</a>
+      <a href="#robocon">Robocon</a>
     </nav>
   </header>
 
@@ -33,11 +34,12 @@
       <div class="overview-copy">
         <p class="eyebrow"><span></span> Engineering Project Portfolio</p>
         <h1>Projects, decisions,<br>and <em>tested outcomes.</em></h1>
-        <p>Two university engineering projects documented from the original problem through design decisions, implementation, and final validation.</p>
+        <p>Two academic engineering projects and one competition build, documenting design decisions, hands-on work, and results.</p>
       </div>
       <div class="project-index" aria-label="Project index">
         <a href="#gauge-reader"><span>01 · Embedded Systems</span><b>AI-Assisted Pressure Gauge Reading &amp; Embedded Resistor Calculator</b><i>Embedded firmware · AI · IoT</i></a>
         <a href="#worm-gearbox"><span>02 · Mechanical Design</span><b>Parametric Worm Gearbox CAD Assembly</b><i>Mechanical design · Inventor · 2D drawings</i></a>
+        <a href="#robocon"><span>03 · Competition Build</span><b>ABU Robocon Electrical Subsystem</b><i>Motor testing · Drivetrain wiring</i></a>
       </div>
     </section>
 
@@ -46,9 +48,9 @@
         <div class="project-number">01</div>
         <div class="project-case-body">
           <div class="project-content case-study-intro">
-            <div class="project-meta"><span>2026</span><span>Academic prototype</span><span>Embedded firmware &amp; IoT · 2-person team</span></div>
+            <div class="project-meta"><span>2026</span><span>Academic prototype</span><span>Embedded firmware &amp; IoT co-developer · 2-person team</span></div>
             <h3>AI-Assisted Pressure Gauge Reading &amp; Embedded Resistor Calculator</h3>
-            <p>Developed an ESP32-S3-CAM prototype for local 4/5-band resistor calculations and pressure-gauge image analysis using an OV5640 camera and the Gemini HTTPS REST API.</p>
+            <p>Co-developed an ESP32-S3-CAM prototype for local 4/5-band resistor calculations and pressure-gauge image analysis using an OV5640 camera and the Gemini HTTPS REST API.</p>
             <div class="tag-row"><span>ESP32-S3-CAM</span><span>Gemini Cloud AI</span><span>IoT</span><span>System Integration</span></div>
           </div>
 
@@ -174,7 +176,7 @@
           <div class="project-content case-study-intro">
             <div class="project-meta"><span>2025</span><span>Mechanical design · 2-person team</span></div>
             <h3>Parametric Worm Gearbox CAD Assembly</h3>
-            <p>Modeled four parametric 3D components in Autodesk Inventor, checked their fit in the gearbox assembly, and prepared 2D drawings plus an exploded view and parts list.</p>
+            <p>Modeled parametric 3D components in Autodesk Inventor, integrated standard parts such as oil seals and ball bearings, and checked the complete gearbox assembly for fit.</p>
             <div class="tag-row"><span>Autodesk Inventor</span><span>Parametric 3D CAD</span><span>2D Drawings</span><span>Assembly Fit</span></div>
           </div>
 
@@ -185,10 +187,10 @@
             </a>
             <div class="case-facts">
               <p class="case-kicker">My responsibility</p>
-              <h4>Four component drawings + exploded assembly</h4>
-              <p>Worm gear, top cover, wheel-shaft end cover, oil seal, and an exploded view showing every component in the complete assembly.</p>
+              <h4>Three parametric parts + assembly documentation</h4>
+              <p>I modeled the worm gear, top cover, and wheel-shaft end cover. The assembly also uses standard parts, including oil seals and ball bearings; the drawing set includes the oil seal and an exploded view.</p>
               <dl>
-                <div><dt>Deliverables</dt><dd>Four parametric 3D parts, 2D drawings, exploded view</dd></div>
+                <div><dt>Deliverables</dt><dd>Parametric 3D parts, 2D drawings, exploded view</dd></div>
                 <div><dt>Drawing work</dt><dd>Dimensions, surface roughness symbols, parts list</dd></div>
                 <div><dt>Design priority</dt><dd>Every mating feature and hole had to align in the final assembly</dd></div>
               </dl>
@@ -209,7 +211,7 @@
             <section>
               <span>03 / WORK</span>
               <h4>Modelled parts and production drawings</h4>
-              <p>I modeled the worm gear, top cover, wheel-shaft end cover, and oil seal as parametric 3D parts. I also prepared their 2D drawings with dimensions and surface roughness symbols, plus an exploded assembly view and parts list.</p>
+              <p>I modeled the worm gear, top cover, and wheel-shaft end cover, then integrated standard parts including oil seals and ball bearings. I prepared 2D component drawings with dimensions and surface roughness symbols, plus an exploded assembly view and parts list.</p>
             </section>
             <section>
               <span>04 / RESULT</span>
@@ -242,6 +244,34 @@
               <img src="assets/mce212/oil-seal.png" alt="Production drawing of the gearbox oil seal" width="1985" height="1404" loading="lazy">
               <span><b>Oil seal</b><small>Section view · chamfer detail</small></span>
             </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-case-study" id="robocon">
+        <div class="project-number">03</div>
+        <div class="project-case-body">
+          <div class="project-content case-study-intro">
+            <div class="project-meta"><span>Jan–Mar 2026</span><span>Thonburi Robot Contest Club</span><span>Electrical subsystem team member</span></div>
+            <h3>ABU Robocon Electrical Subsystem</h3>
+            <p>Worked on the drive motor and power wiring for a competition robot. The drivetrain used four 12 V DC gearmotors, with two motors driving each wheel through a custom two-stage reduction system.</p>
+            <div class="tag-row"><span>12 V DC Gearmotors</span><span>Prik Thai Motor Drivers</span><span>3S LiPo</span><span>Wiring Harnesses</span></div>
+          </div>
+
+          <div class="robocon-notes" aria-label="Robocon electrical work">
+            <p><b>Motor checks.</b> Bench-tested the unloaded drive motors with a regulated 12 V supply and 1 A current limit before assembly.</p>
+            <p><b>Electrical integration.</b> Connected the four gearmotors to Prik Thai motor drivers and fabricated power harnesses with soldered, heat-shrink-insulated motor leads for the 3S LiPo supply.</p>
+          </div>
+
+          <div class="robocon-gallery" aria-label="Robocon build photographs">
+            <figure>
+              <img src="assets/robocon/dual-motor-drive.png" alt="Two dual-motor wheel drive assemblies with gear reductions during Robocon preparation" width="3024" height="4032" loading="lazy">
+              <figcaption><span>01 / DRIVETRAIN</span><b>Dual-motor wheel assemblies</b><small>Four 12 V gearmotors arranged as two motors per driven wheel.</small></figcaption>
+            </figure>
+            <figure>
+              <img src="assets/robocon/chassis-wiring.png" alt="Robocon chassis beside a workbench with motor driver, breadboard, and wiring under development" width="2712" height="2897" loading="lazy">
+              <figcaption><span>02 / INTEGRATION</span><b>Chassis and control wiring</b><small>Motor driver and electrical connections being prepared beside the robot frame.</small></figcaption>
+            </figure>
           </div>
         </div>
       </article>

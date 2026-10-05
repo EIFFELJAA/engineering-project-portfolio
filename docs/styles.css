@@ -261,6 +261,16 @@ h1 em, .closing em { color: #087e73; font-style: normal; }
 .drawing-card > span { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 1.1rem; }
 .drawing-card b { font-size: .9rem; }
 .drawing-card small { color: #8293a4; font: 400 .62rem "IBM Plex Mono", monospace; text-align: right; }
+.robocon-notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 2rem 0; border-top: 1px solid rgba(255,255,255,.18); border-left: 1px solid rgba(255,255,255,.18); }
+.robocon-notes p { margin: 0; padding: 1.5rem; color: #bdc8d2; border-right: 1px solid rgba(255,255,255,.18); border-bottom: 1px solid rgba(255,255,255,.18); font-size: .9rem; }
+.robocon-notes b { color: var(--white); }
+.robocon-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.18); }
+.robocon-gallery figure { min-width: 0; margin: 0; background: var(--ink); }
+.robocon-gallery img { display: block; width: 100%; height: 490px; object-fit: contain; background: #0d2033; }
+.robocon-gallery figcaption { display: grid; gap: .35rem; padding: 1.2rem 1.4rem 1.4rem; }
+.robocon-gallery figcaption span { color: var(--accent); font: 500 .64rem "IBM Plex Mono", monospace; letter-spacing: .07em; }
+.robocon-gallery figcaption b { font-size: 1rem; }
+.robocon-gallery figcaption small { color: #9dadbd; font-size: .84rem; }
 
 .experience { background: var(--white); }
 .section-heading.compact { grid-template-columns: 1fr 2.35fr; }
@@ -340,7 +350,8 @@ footer p { margin: 0; }
   .project-diagram { grid-column: 1; }
   .project-diagram { min-height: 260px; }
   .project-case-study { grid-template-columns: 1fr; }
-  .mce242-hero, .prototype-evidence, .mode-grid, .test-results, .mce242-docs { grid-template-columns: 1fr; }
+  .mce242-hero, .prototype-evidence, .mode-grid, .test-results, .mce242-docs, .robocon-notes, .robocon-gallery { grid-template-columns: 1fr; }
+  .robocon-gallery img { height: 420px; }
   .prototype-photo { min-height: 380px; }
   .prototype-photo + .prototype-photo { border-left: 0; border-top: 1px solid rgba(255,255,255,.18); }
   .mce-demo-panel { grid-column: auto; min-height: auto; }
