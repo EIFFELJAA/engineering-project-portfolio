@@ -6,6 +6,10 @@ https://eiffeljaa.github.io/engineering-project-portfolio/
 
 The site documents an ESP32-S3-CAM gauge and resistor prototype, a parametric worm gearbox CAD assembly, and electrical subsystem work for ABU Robocon.
 
+## Project report
+
+- [AI Meter Reader (MCE242) project report (PDF)](docs/assets/mce242/ai-meter-reader-report.pdf) — public copy with credentials and student IDs removed.
+
 ## Preview locally
 
 Open `docs/index.html` in a browser, or serve the `docs` directory with any static file server.
